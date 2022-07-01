@@ -1,0 +1,237 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff00 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #616161ab;
+  border-radius: 10px;
+}
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+ul {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+li {
+  padding: 5px 12px;
+  border-radius: 10px;
+  background-color: #3f4247bd;
+}
+li:hover {
+  background-color: #3b5999;
+  cursor: pointer;
+}
+.box2 {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1e21;
+  border-bottom: 0.5px solid grey;
+  color: white;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.logo img {
+  width: 80px;
+  border-radius: 100px;
+}
+
+.box3 {
+  display: flex;
+  align-items: center;
+}
+
+.box3 input {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: #3f4247bd;
+}
+
+.filter-input {
+  border: none;
+  color: white;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 15px;
+  gap: 15px;
+  width: 100%;
+  background: #1c1e21;
+}
+
+.friends img {
+  width: 35px;
+  padding: 10px;
+  background: white;
+  border-radius: 100%;
+  border: #3b5999 4px solid;
+}
+
+.friendCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+  padding: 20px 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  background: #272a2ebd;
+  color: white;
+  border-radius: 10px;
+}
+
+.friendCard:hover {
+  background: #42484ebd;
+  cursor: pointer;
+}
+
+.input-text {
+  line-height: 90px;
+  background-color: #3f4247bd;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.input-sender {
+  line-height: 20px;
+  background-color: #3f4247bd;
+  border: none;
+  color: white;
+  border-radius: 7px;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #1c1e21;
+  color: white;
+}
+
+.add-new-message {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  border-bottom: 0.5px solid grey;
+}
+
+.add-new-message-btn {
+  color: white;
+  background: #3b5999;
+  height: 30px;
+  border: none;
+}
+
+.add-new-message-btn:hover {
+  color: white;
+  background: rgb(121, 145, 194);
+  background: radial-gradient(
+    circle,
+    rgb(109, 133, 182) 6%,
+    rgb(81, 117, 189) 100%
+  );
+  cursor: pointer;
+}
+.filter-input {
+  margin: 0 20px;
+}
+
+.messageCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #272a2ebd;
+  padding: 0 20px;
+}
+
+.messages-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty {
+  background: #1c1e21;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  overflow: auto;
+}
+.empty p {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.sponsor3 {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  text-align: left;
+  color: white;
+}
+.sponsor3:hover {
+  border-radius: 20px;
+  background-color: #3f4247bd;
+  cursor: pointer;
+}
+.sponsor3 img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .friends {
+    width: 25%;
+  }
+
+  .messages {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .empty {
+    width: 25%;
+  }
+}
